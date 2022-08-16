@@ -16,7 +16,7 @@ include TEMPLATE_BASE.'/nav.php';
             </div>
         </div>
  <?php
-   if($_SESSION ['userName']==false){
+   if(!isset($_SESSION['userName'])){
    echo '<div class="row">
         <div class="col s12 ">
         <h3 class="flow-text center-align" id="regist" >Ainda não possui uma conta?</h3>
@@ -47,18 +47,78 @@ include TEMPLATE_BASE.'/nav.php';
     
         <div id="jogos">
         <div id="carousel">
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/apex.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/codwz.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/csgo.jpeg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/dark-souls-iii.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/destiny.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/Elden-Ring-3.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/fortnite.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/lol.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/minecraft.jpg " alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/rocketleague.jpg" alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/valorant.jpg" alt=""></a>
-        <a href="<?php echo URL_BASE?>/chat.php" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/wow.jpg" alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/apex.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/codwz.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/csgo.jpeg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/dark-souls-iii.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/destiny.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/Elden-Ring-3.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/fortnite.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/lol.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/minecraft.jpg " alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/rocketleague.jpg" alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/valorant.jpg" alt=""></a>
+        <a href="<?php if(isset($_SESSION['userName'])){
+            echo URL_BASE."/chat.php";
+        }else{
+            echo URL_BASE."/login/loginPage.php";
+
+        }?>" class="imagem"><img  class="img" src="<?php echo URL_BASE?>/imagens/wow.jpg" alt=""></a>
       
 
         

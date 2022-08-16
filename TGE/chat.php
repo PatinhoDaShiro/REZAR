@@ -1,17 +1,22 @@
 <?php
 session_start();
-error_reporting(E_ALL ^ E_NOTICE);
-include 'config.php';
 
-if(isset($_SESSION) == false){
-    header('Location:DIR_loginFuncp');
+error_reporting(E_WARNING);
+include 'chat-conection.php';
+include 'config.php';
+include TEMPLATE_BASE.'/head.php';
+include TEMPLATE_BASE.'/nav.php';
+
+if(!isset($_SESSION['userName'])){
+ 
 }
 
-$nomeUsuario = $_SESSION['userName'];
-
-include TEMPLATE_BASE.'/head.php';
-
-include TEMPLATE_BASE.'/nav.php';
+//  if(isset($_SESSION['userName'])){
+//    $userId = $_SESSION['id'];
+//    $name = $_SESSION['userName'];
+//    $queryInput = "INSERT INTO loggedUsers(id,usuario)VALUES({$userId}, '{$name}')";
+//    $result = mysqli_query($conexao, $queryInput);
+// } 
 ?>
 <link rel="stylesheet" href="<?php echo URL_BASE?>/csspaginas/chws.css" alt="">
 </head>
@@ -61,109 +66,85 @@ include TEMPLATE_BASE.'/nav.php';
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
-   
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
-   
+
     <li class="collection-item avatar grey darken-4">
       <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
       <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
     </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-   
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-    <li class="collection-item avatar grey darken-4">
-      <img src="https://i.pinimg.com/736x/7a/65/f4/7a65f421acede5b0e5ae41b35d9a40c4.jpg" alt="" class="circle">
-      <p class="grey-text lighten-4">PatinhoDaShiroDF</p> 
-    </li>
-   
-   
-   
-    
+
+
+
+
   </ul>
     </div>
 

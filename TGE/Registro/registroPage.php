@@ -25,7 +25,7 @@ include '../config.php';
 
      <div class="row col s12">
         <div class="input-field col s12 inputs">
-          <input id="first_name" type="text" class="validate" name="nome_usuario" placeholder="">
+          <input id="first_name" type="text" class="validate" name="nome_usuario" data-ls-module="charCounter" maxLength="16" placeholder="">
           <label for="first_name">Nome de exibição</label>
         </div>
 </div>
@@ -39,7 +39,7 @@ include '../config.php';
      
       <div class="row col s12 inputs">
         <div class="input-field col s12">
-          <input id="password" type="password" class="validate"  name="senha" placeholder="">
+          <input id="password" type="password" class="validate"  name="senha" data-ls-module="charCounter" minLength="8" placeholder="">
           <label for="password">Senha</label>
         </div>
       </div>

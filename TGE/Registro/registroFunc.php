@@ -1,4 +1,5 @@
 <?php
+include "../config.php";
 include_once ('conexão.php');
 if(empty($_POST['nome_usuario']) || empty($_POST['email']) || empty($_POST['senha']) || empty($_POST['senha_repeat'])){
     header('location: registroPage.php');
@@ -35,7 +36,7 @@ if(empty($_POST['nome_usuario']) || empty($_POST['email']) || empty($_POST['senh
                 //se as senhas não forem coerentes ele para a operação e não envia os dados ao servidor
                 }else{
                 $result = mysqli_query($conexao, "INSERT INTO usuarios(usuario, email, senha, imgPerf) VALUES ('$usuario', '$email', md5('$senha'), 'icon.png' )");
-                    header('location: registroPage.php');
+                    header('location:'.URL_BASE.'/login/loginPage.php');
                 //caso passe por todas as verificações e não tenha erro, envia os dados ao banco, e agora o usuario está registrado
                     
         }

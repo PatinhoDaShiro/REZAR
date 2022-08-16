@@ -43,7 +43,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 						</div>
 						<div class="formulariomsg centered" action="index.php" method="POST">
-								<textarea name="mensagem" id='msg' class="mensagem" placeholder="Digite sua mensagem aqui."></textarea>
+								<textarea name="mensagem" id='msg' class="mensagem" placeholder="Digite sua mensagem aqui. " data-ls-module="charCounter" maxLength="2000"></textarea>
 								<button type="button" class="botaoEnviar  btn waves-effect waves-light" id="btnEnviar"><i class="material-icons right">send</i>
  								</button>
 						</div>
@@ -129,7 +129,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 
 		//função que determina o tempo em que o chat será atualizado(1000 = 1 segundo)
-		setInterval(function(){ajax();}, 1000);
+		setInterval(function(){ajax();}, 500);
 </script>
 
 		<?php

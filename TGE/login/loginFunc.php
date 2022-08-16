@@ -20,6 +20,9 @@ $row = mysqli_num_rows($result);
 if($row == 1){
     $dados = mysqli_fetch_assoc($result);
     $_SESSION ['userName'] = $dados['usuario'];
+    $_SESSION['id'] = $dados['id'];
+    $_SESSION['email'] = $dados['email'];
+    $_SESSION['imgPerf'] = $dados['imgPerf'];
     header('Location: http://localhost/TGE/home.php');
     exit();
     //se retorna 1 (verdadeiro), conclui o login

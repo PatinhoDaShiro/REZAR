@@ -84,26 +84,54 @@ html{
 	border-radius: 20px;       /* roundness of the scroll thumb */
 	border: 3px solid rgb(54, 54, 53);  /* creates padding around scroll thumb */
   }
-
-
-@media screen and (max-width: 700px) and (min-width: 390px){
+  @media screen and (max-width:930px) and (min-width: 800px){
 	.chat{
-		height: 90vh;
+		height: 88vh;
+		font-size: 2rem;
 	}
-	.formulariomsg{	
+	.nome{
+		font-size: 2rem;
+	}
+	.formulariomsg{		
+		padding: 0 2vw 0 2vw;	
+	}
+	.fundo{
+		height: 95vh;
+	}
+	#msg{
+		font-size: 2rem;
+		padding-bottom: 55px;
+	}
 	
+}
+
+  @media screen and (max-width:540px) and (min-width: 400px){
+	.chat{
+		height: 88vh;
+	}
+	.formulariomsg{		
 		padding: 0 2vw 0 2vw;	
 	}
 	.fundo{
 		height: 94vh;
 	}
 }
-@media screen and (max-width: 550px) and (min-width: 530px){
+@media screen and (max-width:600px) and (min-width: 500px){
+	.chat{
+		height: 88vh;
+	}
+	.formulariomsg{		
+		padding: 0 2vw 0 2vw;	
+	}
+	.fundo{
+		height: 91vh;
+	}
+}
+@media screen and (max-width: 550px) and (min-width: 550px){
 	.chat{
 		height: 90vh;
 	}
 	.formulariomsg{	
-	
 		padding: 0 2vw 0 2vw;	
 	}
 	.fundo{
